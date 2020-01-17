@@ -107,7 +107,7 @@ public:
 			dynamic_cast<T&>(character);
 			return true;
 		}
-		catch (...) {
+		catch (std::exception bad_cast) {
 			return false;
 		}
 	}

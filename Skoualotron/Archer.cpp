@@ -201,11 +201,11 @@ void Archer::attackWeapon(Character* p_target) {
 	float coeff = (rand() % 16) / 100 + 0.85f;
 
 	if (isAiming()) {
-		p_target->takeDmg((int)(coeff * 9.0f * agi() * 1.33f * weapon()->base_dmg() / p_target->def()));
+		p_target->takeDmg((int)(coeff * 9.0f * 1.33f * (agi() + weapon()->base_dmg()) / p_target->def()));
 		m_isAiming = false;
 	}
 	else {
-		p_target->takeDmg((int)(coeff * 9.0f * agi() * weapon()->base_dmg() / p_target->def()));
+		p_target->takeDmg((int)(coeff * 9.0f * (agi() + weapon()->base_dmg()) / p_target->def()));
 	}
 
 	if (Weapon::is<Bow>(*m_weapon)) {

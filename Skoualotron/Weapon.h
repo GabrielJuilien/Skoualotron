@@ -50,7 +50,7 @@ public:
 			dynamic_cast<T&>(weapon);
 			return true;
 		}
-		catch (...) {
+		catch (std::exception bad_cast) {
 			return false;
 		}
 	}

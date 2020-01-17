@@ -241,7 +241,7 @@ void Wizard::attackWeapon(Character* p_target) {
 	anim_weapon->play(true);
 	if (p_target->dodge()) throw std::string("data/Text/target_dodged.png");
 	float coeff = (rand() % 16) / 100 + 0.85f;
-	p_target->takeDmg((int)(coeff * 5.0f * intel() * weapon()->base_dmg() / p_target->def()));
+	p_target->takeDmg((int)(coeff * 5.0f * (intel() + weapon()->base_dmg()) / p_target->def()));
 
 	if (Weapon::is<Sword>(*m_weapon)) {
 		dynamic_cast<Sword*>(m_weapon)->loseDurability();

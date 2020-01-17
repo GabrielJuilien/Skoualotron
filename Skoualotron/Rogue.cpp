@@ -37,7 +37,7 @@ bool Rogue::isInvisible() {
 }
 
 bool Rogue::poisonRoll() {
-	if (rand() % 101 >= m_poisonChance) return true;
+	if (rand() % 100 < m_poisonChance) return true;
 	else return false;
 }
 
@@ -133,7 +133,7 @@ void Rogue::attackWeapon(Character* p_target) {
 	anim_weapon->play(true);
 	if (p_target->dodge()) throw std::string("data/Text/target_dodged.png");
 	float coeff = (rand() % 16) / 100 + 0.85f;
-	p_target->takeDmg((int)(coeff * 9.0f * agi() * weapon()->base_dmg() / p_target->def()));
+	p_target->takeDmg((int)(coeff * 9.0f * (agi() + weapon()->base_dmg()) / p_target->def()));
 
 	if (Weapon::is<Bow>(*m_weapon)) {
 		m_arrows--;

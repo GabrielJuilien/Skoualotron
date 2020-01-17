@@ -168,7 +168,7 @@ void Warrior::attackWeapon(Character* p_target) {
 	anim_weapon->play(true);
 	if (p_target->dodge()) throw std::string("data/Text/target_dodged.png");
 	float coeff = (rand() % 16) / 100 + 0.85f;
-	p_target->takeDmg((int)(coeff * 7.0f * atk() * weapon()->base_dmg() / p_target->def()));
+	p_target->takeDmg((int)(coeff * 7.0f * (atk() + weapon()->base_dmg()) / p_target->def()));
 
 	if (Weapon::is<Dagger>(*m_weapon)) {
 		dynamic_cast<Dagger*>(m_weapon)->loseDurability();
