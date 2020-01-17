@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Archer.cpp">
+      <Filter>Code Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Code Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Rogue.cpp">
+      <Filter>Code Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Warrior.cpp">
+      <Filter>Code Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Wizard.cpp">
+      <Filter>Code Source\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Code Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationStack.cpp">
+      <Filter>Code Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandlers.cpp">
+      <Filter>Code Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Code Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Modifier.cpp">
+      <Filter>Code Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="readConf.cpp">
+      <Filter>Code Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Team.cpp">
+      <Filter>Code Source\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Bow.cpp">
+      <Filter>Code Source\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Dagger.cpp">
+      <Filter>Code Source\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="MeleeWeapon.cpp">
+      <Filter>Code Source\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="RangeWeapon.cpp">
+      <Filter>Code Source\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Staff.cpp">
+      <Filter>Code Source\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Sword.cpp">
+      <Filter>Code Source\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="Weapon.cpp">
+      <Filter>Code Source\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Code Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Archer.h">
+      <Filter>Code Source\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Code Source\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Rogue.h">
+      <Filter>Code Source\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Warrior.h">
+      <Filter>Code Source\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Wizard.h">
+      <Filter>Code Source\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Code Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationStack.h">
+      <Filter>Code Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandlers.h">
+      <Filter>Code Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Code Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Modifier.h">
+      <Filter>Code Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="readConf.h">
+      <Filter>Code Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Team.h">
+      <Filter>Code Source\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Bow.h">
+      <Filter>Code Source\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Dagger.h">
+      <Filter>Code Source\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="MeleeWeapon.h">
+      <Filter>Code Source\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="RangeWeapon.h">
+      <Filter>Code Source\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Staff.h">
+      <Filter>Code Source\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Sword.h">
+      <Filter>Code Source\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Code Source\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Code Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Code Source">
+      <UniqueIdentifier>{758f81d6-4233-4451-8f2a-231c34d862d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code Source\Engine">
+      <UniqueIdentifier>{81f4eb32-f34c-4561-8e3b-d0c0093ce366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code Source\Weapons">
+      <UniqueIdentifier>{fca2a1fe-a51e-4d05-8108-06768b9ff823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code Source\Characters">
+      <UniqueIdentifier>{e21dcd33-2b4c-4a04-9379-574d16011a34}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,92 @@
+Character
+	Class Wizard
+	Name Gandalf
+	Speed 23
+	Attack 13
+	Intelligence 20
+	Health 150
+	Defense 12
+	Dodge 12
+	Agility 15
+EndCharacter
+Character
+	Class Warrior
+	Name Leoric
+	Health 230
+	Dodge 12
+	Attack 20
+	Defense 34
+	Agility 11
+	Speed 27
+	Intelligence 12
+	Special 06
+EndCharacter
+Character
+	Class Archer
+	Name Sylvanas Coursevent
+	Speed 21
+	Attack 14
+	Dodge 12
+	Defense 23
+	Intelligence 12
+	Agility 17
+	Health 175
+EndCharacter
+Character
+	Class Wizard
+	Name Jaina Portvaillant
+	Attack 14
+	Intelligence 19
+	Dodge 12
+	Defense 14
+	Health 125
+	Speed 22
+	Agility 17
+EndCharacter
+Character
+	Class Rogue
+	Name Garona
+	Intelligence 09
+	Speed 19
+	Attack 12
+	Health 170
+	Special 20
+	Defense 20
+	Agility 17
+	Dodge 25
+EndCharacter
+Character
+	Class Warrior
+	Name Xena
+	Attack 26
+	Health 240
+	Defense 37
+	Special 08
+	Intelligence 12
+	Dodge 12
+	Agility 12
+	Speed 19
+EndCharacter
+Character
+	Class Rogue
+	Name Jorach Ravenholdt
+	Intelligence 09
+	Speed 18
+	Attack 11
+	Health 170
+	Special 22
+	Defense 21
+	Agility 18
+	Dodge 20
+EndCharacter
+Character
+	Class Archer
+	Name Oliver Queen
+	Speed 22
+	Attack 15
+	Intelligence 11
+	Defense 25
+	Agility 16
+	Health 175
+	Dodge 12
+EndCharacter

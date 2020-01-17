@@ -1,0 +1,68 @@
+Weapon
+	Type Staff
+	Name Baguette de Sureau
+	Health -30
+	Cost 6
+	Intelligence 8
+	Critical 12
+	Damage 7
+EndWeapon
+Weapon
+	Type Sword
+	Name Excalibur
+	Critical 9
+	Attack 3
+	Durability 30
+	Damage 15
+EndWeapon
+Weapon
+	Type Bow
+	Name Gandiva
+	Critical 17
+	Attack 5
+	Damage 12
+	Arrows 20
+EndWeapon
+Weapon
+	Type Dagger
+	Name Perce-bourse
+	Damage 12
+	Health -10
+	Defense 4
+	Durability 220
+	Critical 25
+EndWeapon
+Weapon
+	Type Sword
+	Name Porte-cendre
+	Durability 200
+	Health -90
+	Damage 17
+	Attack 7
+	Critical 10
+EndWeapon
+Weapon
+	Type Bow
+	Name Thori'dal
+	Damage 10
+	Health 30
+	Critical 12
+	Arrows 22
+EndWeapon
+Weapon
+	Type Staff
+	Name Atiesh
+	Intelligence 5
+	Cost 7
+	Critical 12
+	Damage 10
+EndWeapon
+Weapon
+	Type Dagger
+	Name Sorcelame
+	Agility 5
+	Critical 24
+	Attack -2
+	Damage 12
+	Durability 180
+EndWeapon
