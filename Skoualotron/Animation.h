@@ -4,6 +4,7 @@
 #include "../librairies/SDL2-2.0.6/include/SDL.h"
 #include "../librairies/SDL2-2.0.6/include/SDL_image.h"
 #include "../librairies/SDL2-2.0.6/include/SDL_ttf.h"
+#include "../librairies/SDL2-2.0.6/include/SDL_mixer.h"
 
 
 
@@ -17,6 +18,8 @@ private:
 	SDL_Rect* m_source;
 	SDL_Rect* m_dest;
 	SDL_Renderer* m_renderer;
+	
+	Mix_Chunk* m_sound;
 	
 	int m_length; //Total number of frames
 	int m_currentFrame;

@@ -113,7 +113,7 @@ xcopy /I /Y "$(SolutionDir)Skoualotron\data" "$(SolutionDir)bin\data\"</Command>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2main.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_image.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2main.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_image.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_ttf.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /Y "$(SolutionDir)librairies\SDL2-2.0.6\bin\x64\*.dll" "$(SolutionDir)bin\x64\"
@@ -154,7 +154,7 @@ xcopy /I /Y "$(SolutionDir)Skoualotron\data" "$(SolutionDir)bin\data\"</Command>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2main.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_image.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2main.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_image.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_ttf.lib;../librairies/SDL2-2.0.6/lib/$(Platform)/SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>copy /Y "$(SolutionDir)librairies\SDL2-2.0.6\bin\x64\*.dll" "$(SolutionDir)bin\x64\"

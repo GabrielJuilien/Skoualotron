@@ -11,6 +11,7 @@ enum class ePosition {
 
 int main(int argc, char** argv) {
 	SDL_Window* window;
+	Mix_Music* music;
 	SDL_Renderer* renderer;
 
 	Uint32 timeStep = 1000 / FRAMERATE;
@@ -29,13 +30,18 @@ int main(int argc, char** argv) {
 
 	ePosition pos = ePosition::DOWN;
 
-	if (!SDL_WasInit(SDL_INIT_VIDEO))
+	if (!SDL_WasInit(SDL_INIT_VIDEO | SDL_INIT_AUDIO))
 	{
-		if (SDL_Init(SDL_INIT_VIDEO) != 0)
+		if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) != 0)
 		{
 			std::cerr << "[-] ERROR - Failed to initialise SDL (" << SDL_GetError() << ")\n";
 			return EXIT_FAILURE;
 		}
+	}
+
+	if (!Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096)) {
+		std::cerr << "Failed to init mixer.\n";
+		return EXIT_FAILURE;
 	}
 
 	if (TTF_Init()) {
