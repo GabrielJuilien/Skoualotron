@@ -13,6 +13,7 @@ protected:
 public:
 	Animation* anim_aiming;
 	Animation* icon_aiming;
+
 	Animation* anim_healPoison;
 	Animation* icon_healPoison;
 

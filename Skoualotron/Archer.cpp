@@ -271,18 +271,25 @@ void Archer::updateRecap() {
 
 
 void Archer::render() {
-	if (anim_aiming && anim_aiming->play())
+	if (anim_aiming && anim_aiming->play()) {
 		anim_aiming->render();
-	else if (anim_basic && anim_basic->play())
+	}
+	else if (anim_basic && anim_basic->play()) {
 		anim_basic->render();
-	else if (anim_healPoison && anim_healPoison->play())
+
+	}
+	else if (anim_healPoison && anim_healPoison->play()) {
 		anim_healPoison->render();
-	else if (anim_weapon && anim_weapon->play())
+	}
+	else if (anim_weapon && anim_weapon->play()) {
 		anim_weapon->render();
-	else 
+	}
+	else {
 		anim_idle->render();
-	if (anim_hp && anim_hp->play())
+	}
+	if (anim_hp && anim_hp->play()) {
 		anim_hp->render();
+	}
 }
 
 void Archer::renderIcon() {

@@ -200,8 +200,10 @@ bool Character::equip(Weapon* p_weapon) {
 
 			tmp_archer->anim_aiming = new Animation("data/Characters/Archer/archer_bow_aiming.png", tmp_archer->animation()->renderer(), 25, 0, false, false, 320, 320, tmp_archer->animation()->get_xPos(), tmp_archer->animation()->get_yPos(), tmp_archer->animation()->getSide());
 			tmp_archer->icon_aiming = new Animation("data/Characters/Archer/archer_aim.png", tmp_archer->animation()->renderer(), 1, 0, true, true, 64, 64, 363, 26, SIDE::LEFT);
-
-			
+		
+			tmp_archer->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_archer->anim_weapon->loadSample("data/Sounds/bow.wav");
+			tmp_archer->anim_healPoison->loadSample("data/Sounds/heal.wav");
 			return true;
 		}
 		else if (Weapon::is<Dagger>(*p_weapon)) {
@@ -222,6 +224,10 @@ bool Character::equip(Weapon* p_weapon) {
 
 			tmp_archer->anim_healPoison = new Animation("data/Characters/heal_poison.png", tmp_archer->animation()->renderer(), 25, 0, false, false, 320, 320, 0, 0, SIDE::LEFT);
 			tmp_archer->icon_healPoison = new Animation("data/Characters/Archer/archer_heal_poison.png", tmp_archer->animation()->renderer(), 1, 0, true, true, 64, 64, 257, 26, SIDE::LEFT);
+
+			tmp_archer->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_archer->anim_weapon->loadSample("data/Sounds/dagger.wav");
+			tmp_archer->anim_healPoison->loadSample("data/Sounds/heal.wav");
 
 			return true;
 		}
@@ -247,6 +253,10 @@ bool Character::equip(Weapon* p_weapon) {
 			tmp_rogue->anim_sneak = new Animation("data/Characters/Rogue/rogue_bow_sneak.png", tmp_rogue->animation()->renderer(), 25, 0, false, false, 320, 320, tmp_rogue->animation()->get_xPos(), tmp_rogue->animation()->get_yPos(), tmp_rogue->animation()->getSide());
 			tmp_rogue->icon_sneak = new Animation("data/Characters/Rogue/rogue_sneak.png", tmp_rogue->animation()->renderer(), 1, 0, true, true, 64, 64, 257, 26, SIDE::LEFT);
 
+			tmp_rogue->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_rogue->anim_weapon->loadSample("data/Sounds/bow.wav");
+			tmp_rogue->anim_sneak->loadSample("data/Sounds/sneak.wav");
+
 			return true;
 		}
 		else if (Weapon::is<Dagger>(*p_weapon)) {
@@ -267,6 +277,10 @@ bool Character::equip(Weapon* p_weapon) {
 
 			tmp_rogue->anim_sneak = new Animation("data/Characters/Rogue/rogue_dagger_sneak.png", tmp_rogue->animation()->renderer(), 25, 0, false, false, 320, 320, tmp_rogue->animation()->get_xPos(), tmp_rogue->animation()->get_yPos(), tmp_rogue->animation()->getSide());
 			tmp_rogue->icon_sneak = new Animation("data/Characters/Rogue/rogue_sneak.png", tmp_rogue->animation()->renderer(), 1, 0, true, true, 64, 64, 257, 26, SIDE::LEFT);
+
+			tmp_rogue->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_rogue->anim_weapon->loadSample("data/Sounds/dagger.wav");
+			tmp_rogue->anim_sneak->loadSample("data/Sounds/sneak.wav");
 
 			return true;
 		}
@@ -294,6 +308,11 @@ bool Character::equip(Weapon* p_weapon) {
 			tmp_warrior->anim_repair = new Animation("data/Characters/weapon_repair.png", tmp_warrior->animation()->renderer(), 25, 0, false, false, 320, 320, 0, 0, SIDE::LEFT);
 			tmp_warrior->icon_repair = new Animation("data/Characters/Warrior/warrior_repair.png", tmp_warrior->animation()->renderer(), 1, 0, true, true, 64, 64, 363, 26, SIDE::LEFT);
 
+			tmp_warrior->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_warrior->anim_weapon->loadSample("data/Sounds/sword.wav");
+			tmp_warrior->anim_repair->loadSample("data/Sounds/repair.wav");
+			tmp_warrior->anim_warcry->loadSample("data/Sounds/warcry.wav");
+
 			return true;
 		}
 		else if (Weapon::is<Dagger>(*p_weapon)) {
@@ -317,6 +336,11 @@ bool Character::equip(Weapon* p_weapon) {
 
 			tmp_warrior->anim_repair = new Animation("data/Characters/weapon_repair.png", tmp_warrior->animation()->renderer(), 25, 0, false, false, 320, 320, 0, 0, SIDE::LEFT);
 			tmp_warrior->icon_repair = new Animation("data/Characters/Warrior/warrior_repair.png", tmp_warrior->animation()->renderer(), 1, 0, true, true, 64, 64, 363, 26, SIDE::LEFT);
+
+			tmp_warrior->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_warrior->anim_weapon->loadSample("data/Sounds/dagger.wav");
+			tmp_warrior->anim_repair->loadSample("data/Sounds/repair.wav");
+			tmp_warrior->anim_warcry->loadSample("data/Sounds/warcry.wav");
 
 			return true;
 		}
@@ -344,6 +368,10 @@ bool Character::equip(Weapon* p_weapon) {
 			tmp_wizard->anim_regenMana = new Animation("data/Characters/mana_regen.png", tmp_wizard->animation()->renderer(), 25, 0, false, false, 320, 320, tmp_wizard->animation()->get_xPos(), tmp_wizard->animation()->get_yPos(), SIDE::LEFT);
 			tmp_wizard->icon_regenMana = new Animation("data/Characters/Wizard/wizard_mana.png", tmp_wizard->animation()->renderer(), 1, 0, true, true, 64, 64, 363, 26, SIDE::LEFT);
 
+			tmp_wizard->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_wizard->anim_weapon->loadSample("data/Sounds/sword.png"); 
+			tmp_wizard->anim_enchant->loadSample("data/Sounds/repair.wav");
+			tmp_wizard->anim_regenMana->loadSample("data/Sounds/heal.wav");
 			return true;
 		}
 		else if (Weapon::is<Staff>(*p_weapon)) {
@@ -370,6 +398,11 @@ bool Character::equip(Weapon* p_weapon) {
 			tmp_wizard->anim_heal = new Animation("data/Characters/heal.png", tmp_wizard->animation()->renderer(), 25, 0, false, false, 320, 320, 0, 0, SIDE::LEFT);
 			tmp_wizard->icon_heal = new Animation("data/Characters/Wizard/wizard_heal.png", tmp_wizard->animation()->renderer(), 1, 0, true, true, 64, 64, 476, 26, SIDE::LEFT);
 
+			tmp_wizard->anim_basic->loadSample("data/Sounds/basic.wav");
+			tmp_wizard->anim_weapon->loadSample("data/Sounds/staff.wav");
+			tmp_wizard->anim_enchant->loadSample("data/Sounds/repair.wav");
+			tmp_wizard->anim_regenMana->loadSample("data/Sounds/heal.wav");
+			tmp_wizard->anim_heal->loadSample("data/Sounds/heal.wav");
 			return true;
 		}
 		else return false;

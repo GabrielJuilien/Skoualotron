@@ -189,6 +189,7 @@ Game* handlerWeaponDraft(Game* game, SDL_Event e, SDL_Renderer* renderer) {
 					if (game->weaponDraftAnimationStack->animation.at((size_t)i + 2)->hover(x_mousePos, y_mousePos)) {
 						if (nextCharacterToPickWeapon->equip(game->weaponDraftPool.at(i))) {
 
+							delete game->weaponDraftAnimationStack->animation.at((size_t)i + 2);
 							game->weaponDraftAnimationStack->animation.erase(game->weaponDraftAnimationStack->animation.begin() + i + 2);
 
 							game->weaponDraftPool.erase(game->weaponDraftPool.begin() + i);

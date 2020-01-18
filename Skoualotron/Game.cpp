@@ -88,6 +88,10 @@ void Game::setTarget(Character* p_character) {
 			}
 		}
 	}
+	catch (std::string exception) {
+		if (!strcmp(exception.c_str(), "data/Text/this_target_is_provocative.png"))
+		throw exception;
+	}
 	catch (...) {
 		//Target is an ally
 	}

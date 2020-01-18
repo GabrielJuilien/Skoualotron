@@ -170,6 +170,11 @@ void Animation::changeTexture(std::string p_path) {
 	SDL_FreeSurface(tmp);
 }
 
+
+void Animation::loadSample(std::string p_path) {
+	m_sound = Mix_LoadWAV(p_path.c_str());
+}
+
 bool Animation::play() {
 	return m_play;
 }
@@ -215,6 +220,9 @@ void Animation::render() {
 				return;
 			}
 		}
+		if (m_sound && m_currentFrame == 1) {
+			Mix_PlayChannel(-1, m_sound, 0);
+		}
 		
 		if (m_dest->w == w) { //If static image
 			return;
@@ -246,4 +254,6 @@ Animation::~Animation() {
 		free(m_source);
 	if(m_dest)
 		free(m_dest);
+	if (m_sound)
+		Mix_FreeChunk(m_sound);
 }

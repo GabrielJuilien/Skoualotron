@@ -42,6 +42,8 @@ public:
 
 	void flip(SIDE p_side);
 
+	void loadSample(std::string p_path);
+
 	//Getters
 	bool play();
 	bool loop();

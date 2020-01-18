@@ -12,6 +12,7 @@ Game* loadConf(std::string charactersPath, std::string weaponsPath, SDL_Renderer
 	new_game->menuAnimationStack->append(new Animation("data/Backgrounds/title_screen.png", renderer, 10, true, true));
 	new_game->menuAnimationStack->append(new Animation("data/Text/new_game.png", renderer, 25, 0, true, true, 320, 180, WINDOW_WIDTH / 2 - 160, WINDOW_HEIGHT / 2, SIDE::LEFT));
 	new_game->menuAnimationStack->append(new Animation("data/Text/exit.png", renderer, 25, 0, true, true, 240, 135, WINDOW_WIDTH / 2 - 120, WINDOW_HEIGHT / 3 * 2, SIDE::LEFT));
+	new_game->menuAnimationStack->append(new Animation("data/Text/credits.png", renderer, 1, 0, true, true, 500, 200, 1420, 880, SIDE::LEFT));
 
 	loading->render();
 	loading->render();

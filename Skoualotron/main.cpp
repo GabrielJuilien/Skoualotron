@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 		}
 	}
 
-	if (!Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096)) {
+	if (Mix_OpenAudio(44100, AUDIO_S16LSB, 2, 4096)) {
 		std::cerr << "Failed to init mixer.\n";
 		return EXIT_FAILURE;
 	}
@@ -65,6 +65,9 @@ int main(int argc, char** argv) {
 	renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
 
 	Game* game = loadConf("data/characters.jdc", "data/weapons.jdc", renderer);
+	music = Mix_LoadMUS("data/Sounds/Emil Rottmayer - Descend - 07 L.I.F.T.wav");
+	Mix_VolumeMusic(32);
+	Mix_PlayMusic(music, -1);
 
 	Uint32 lastFrameTime = SDL_GetTicks();
 
@@ -118,11 +121,12 @@ int main(int argc, char** argv) {
 		delete game;
 	
 	SDL_DestroyRenderer(renderer);
-
-	//Destroying window
 	SDL_DestroyWindow(window);
+	Mix_FreeMusic(music);
+
 	TTF_Quit();
 	SDL_Quit();
+	Mix_CloseAudio();
 
 	return EXIT_SUCCESS;
 }
